@@ -1,4 +1,5 @@
 import React from "react";
+import "./App.css"
 import { useSelector, useDispatch } from "react-redux";
 import {increment, decrement} from './actions'
 
@@ -8,10 +9,13 @@ function App() {
   const dispatch = useDispatch();
 
   return (
-    <div className="App">
+    <div className="bd">
       <h1>Counter {counter}</h1>
-      <button onClick={() => dispatch(increment())}>+</button>
-      <button onClick={() => dispatch(decrement())}>-</button>
+      <div className="btn">
+      <button className="btn1" onClick={() => dispatch(increment())}>+</button>
+      <button className="btn2" onClick={() => dispatch(decrement())}>-</button>
+      </div>
+     
       {isLogged ? <h3>Valuable information</h3>: ""}
       
     </div>
