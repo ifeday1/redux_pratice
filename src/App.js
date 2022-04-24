@@ -16,7 +16,7 @@ function App() {
       <button className="btn2" onClick={() => dispatch(decrement())}>-</button>
       </div>
      
-      {isLogged ? <h3>Valuable information</h3>: ""}
+      {isLogged ? <h3>Valuable information here</h3>: ""}
       
     </div>
   );
